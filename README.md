@@ -59,3 +59,4 @@ This will extract data from the input FHIR message and generate output files in 
 * `associations.json`: This file presents a mapping of simplified resource names to their original resource URLs.
 * `modified_data.json`: Within this file, you will find a simplified representation of the extracted references after specific modifications. If a complete reference (e.g., `<name>\<UID>`) is still present in this file, it indicates an incorrect reference.
 * `output_response.json`: This file provides an assessment of the FHIR message's validity. It identifies any issues related to references and offers a comprehensive list of incorrect references, along with the FHIR resources that reference them.
+* This is an example of output: [!Example1](Python_FHIR_Visualizer\examples\example2_wrongFHIRmessage\output\pictures\fhir_structure_network2.PNG)
