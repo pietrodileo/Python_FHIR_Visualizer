@@ -1,6 +1,6 @@
 # Python_FHIR_Visualizer
 
-Python_FHIR_Visualizer is a Python tool that processes FHIR (Fast Healthcare Interoperability Resources) messages in JSON format. It extracts information, modifies references, and creates visual representations of the FHIR message structure.
+Python_FHIR_Visualizer is a Python tool designed to process FHIR (Fast Healthcare Interoperability Resources) messages in JSON format. It extracts information from FHIR resources and checks the validity of the references contained in the message. Finally, it creates visual representations of the FHIR message structure, available as both a .png file and an .html output for easy visualization.
 
 ## Table of Contents
 
@@ -11,23 +11,21 @@ Python_FHIR_Visualizer is a Python tool that processes FHIR (Fast Healthcare Int
 
 ## Project Overview
 
-PyFHIR Visualizer provides a set of functionalities to work with FHIR messages, including:
+Python_FHIR_Visualizer provides a set of essential functionalities for working with FHIR messages, including:
 
-- Extraction of information from FHIR messages.
-- Modification of FHIR message references.
-- Visualization of FHIR message structure in a graphical format.
+* Extraction of information from FHIR messages.
+* Validation of FHIR message references.
+* Visualization of the FHIR message reference structure.
 
-This tool aims to facilitate the analysis and processing of FHIR messages, making it easier to understand and work with healthcare interoperability data.
+This tool aims to simplify the analysis and processing of FHIR messages, making it easier to verify the integrity of the message structure.
 
 ## Prerequisites
 
-Before using PyFHIR Visualizer, make sure you have the following prerequisites:
-
-- All the requirements are contained  `requirements.txt`
+Before using the Python_FHIR_Visualizer, ensure you have installed all the required dependencies listed in `requirements.txt`. 
 
 ## Installation
 
-Follow these steps to install and set up PyFHIR Visualizer:
+Follow these steps to install and set up Python_FHIR_Visualizer:
 
 1. Clone this repository:
 
@@ -47,11 +45,7 @@ Follow these steps to install and set up PyFHIR Visualizer:
 
 ## Usage
 
-PyFHIR Visualizer offers several features for processing FHIR messages. Here are some common tasks:
-
-### Extract Information
-
-To extract information from a FHIR message, run the following command:
+Python_FHIR_Visualizer offers several features for processing FHIR messages. To run the process, execute the following command:
 
 ```bash
 python main.py
@@ -61,10 +55,7 @@ This will extract data from the input FHIR message and generate output files in 
 
 ### Output Files
 
-`associations.json` contains a mapping of simplified resource names to their original resource URLs.
-
-`extract_data.json` contains information extracted from the FHIR message, including resource URLs and references.
-
-`modified_data.json` reflects the FHIR message data after reference modifications have been applied.
-
-`output_response.json` provides an assessment of the FHIR message's validity and captures any issues with references.
+* `extract_data.json`: This file contains information regarding the references among the resources included in the FHIR message.
+* `associations.json`: This file presents a mapping of simplified resource names to their original resource URLs.
+* `modified_data.json`: Within this file, you will find a simplified representation of the extracted references after specific modifications. If a complete reference (e.g., `<name>\<UID>`) is still present in this file, it indicates an incorrect reference.
+* `output_response.json`: This file provides an assessment of the FHIR message's validity. It identifies any issues related to references and offers a comprehensive list of incorrect references, along with the FHIR resources that reference them.
