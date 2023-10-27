@@ -1,0 +1,78 @@
+[
+    {
+        "risorsa": "MessageHeader",
+        "reference": {
+            "focus": "Encounter"
+        }
+    },
+    {
+        "risorsa": "Encounter",
+        "reference": {
+            "basedOn": "ServiceRequest",
+            "condition": "Condition",
+            "assigner": "Organization2",
+            "subject": "Patient"
+        }
+    },
+    {
+        "risorsa": "Condition",
+        "reference": {
+            "asserter": "PractitionerRole",
+            "subject": "Patient"
+        }
+    },
+    {
+        "risorsa": "ServiceRequest",
+        "reference": {
+            "encounter": "Encounter",
+            "requester": "PractitionerRole",
+            "specimen": "Specimen",
+            "subject": "Patient",
+            "supportingInfo": "Observation"
+        }
+    },
+    {
+        "risorsa": "Observation",
+        "reference": {}
+    },
+    {
+        "risorsa": "Specimen",
+        "reference": {}
+    },
+    {
+        "risorsa": "Organization",
+        "reference": {}
+    },
+    {
+        "risorsa": "Organization2",
+        "reference": {
+            "partOf": "Organization"
+        }
+    },
+    {
+        "risorsa": "Organization3",
+        "reference": {
+            "partOf": "Organization2"
+        }
+    },
+    {
+        "risorsa": "Organization4",
+        "reference": {
+            "partOf": "Organization3"
+        }
+    },
+    {
+        "risorsa": "Patient",
+        "reference": {}
+    },
+    {
+        "risorsa": "PractitionerRole",
+        "reference": {
+            "practitioner": "Practitioner"
+        }
+    },
+    {
+        "risorsa": "Practitioner",
+        "reference": {}
+    }
+]

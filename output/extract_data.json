@@ -1,0 +1,78 @@
+[
+    {
+        "risorsa": "MessageHeader/05ffc960-c558-4d07-87ff-9988d15322df",
+        "reference": {
+            "focus": "Encounter/ace5cde7-33f3-4d36-9d6b-9a837ed7fdcb"
+        }
+    },
+    {
+        "risorsa": "Encounter/ace5cde7-33f3-4d36-9d6b-9a837ed7fdcb",
+        "reference": {
+            "basedOn": "ServiceRequest/e2bdf00d-2235-4465-8b9c-944e337efd47",
+            "condition": "Condition/25bc970c-d45c-11ed-afa1-0242ac120002",
+            "assigner": "Organization/37d47b20-fbe0-11ed-99f7-02001700b287",
+            "subject": "Patient/6686199c-f386-4345-a178-5e98023575f7"
+        }
+    },
+    {
+        "risorsa": "Condition/25bc970c-d45c-11ed-afa1-0242ac120002",
+        "reference": {
+            "asserter": "PractitionerRole/65a0765e-6f57-11ee-adbe-02001700b287",
+            "subject": "Patient/6686199c-f386-4345-a178-5e98023575f7"
+        }
+    },
+    {
+        "risorsa": "ServiceRequest/e2bdf00d-2235-4465-8b9c-944e337efd47",
+        "reference": {
+            "encounter": "Encounter/ace5cde7-33f3-4d36-9d6b-9a837ed7fdcb",
+            "requester": "PractitionerRole/65a0765e-6f57-11ee-adbe-02001700b287",
+            "specimen": "Specimen/4bbecc4b-60b4-4b4a-9b99-ce39b1f69876",
+            "subject": "Patient/6686199c-f386-4345-a178-5e98023575f7",
+            "supportingInfo": "Observation/d52a9b60-d45e-11ed-afa1-0242ac120002"
+        }
+    },
+    {
+        "risorsa": "Observation/d52a9b60-d45e-11ed-afa1-0242ac120002",
+        "reference": {}
+    },
+    {
+        "risorsa": "Specimen/4bbecc4b-60b4-4b4a-9b99-ce39b1f69876",
+        "reference": {}
+    },
+    {
+        "risorsa": "Organization/7195779b-9c43-4074-a2d4-7e34e18b1ae4",
+        "reference": {}
+    },
+    {
+        "risorsa": "Organization/37d47b20-fbe0-11ed-99f7-02001700b287",
+        "reference": {
+            "partOf": "Organization/7195779b-9c43-4074-a2d4-7e34e18b1ae4"
+        }
+    },
+    {
+        "risorsa": "Organization/65a05dcc-6f57-11ee-adbe-02001700b287",
+        "reference": {
+            "partOf": "Organization/37d47b20-fbe0-11ed-99f7-02001700b287"
+        }
+    },
+    {
+        "risorsa": "Organization/72c10akc-9d02-34df-cina-01945719a018",
+        "reference": {
+            "partOf": "Organization/65a05dcc-6f57-11ee-adbe-02001700b287"
+        }
+    },
+    {
+        "risorsa": "Patient/6686199c-f386-4345-a178-5e98023575f7",
+        "reference": {}
+    },
+    {
+        "risorsa": "PractitionerRole/65a0765e-6f57-11ee-adbe-02001700b287",
+        "reference": {
+            "practitioner": "Practitioner/660cecf8-d45c-11ed-afa1-0242ac120002"
+        }
+    },
+    {
+        "risorsa": "Practitioner/660cecf8-d45c-11ed-afa1-0242ac120002",
+        "reference": {}
+    }
+]

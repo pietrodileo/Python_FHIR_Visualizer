@@ -1,0 +1,9 @@
+
+[2023-10-27 17:05:04.311272] - reading input.json
+[2023-10-27 17:05:04.311272] - file opened
+[2023-10-27 17:05:04.326871] - data extracted successfully
+[2023-10-27 17:05:04.329868] - associations created
+[2023-10-27 17:05:04.329868] - data modified and cleaned successfully
+[2023-10-27 17:05:05.179323] - picture created
+.\output\pictures\fhir_structure_network2.html
+[2023-10-27 17:05:05.412484] - HTML file created

@@ -1,0 +1,5 @@
+{
+    "response": "FHIR message is good!",
+    "wrong_references": [],
+    "isaValidFHIR": 1
+}

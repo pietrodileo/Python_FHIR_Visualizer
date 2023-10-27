@@ -1,0 +1,8 @@
+
+[2023-10-27 16:54:28.434462] - reading input.json
+[2023-10-27 16:54:28.435461] - file opened
+[2023-10-27 16:54:28.435461] - data extracted successfully
+[2023-10-27 16:54:28.438460] - associations created
+[2023-10-27 16:54:28.438460] - data modified and cleaned successfully
+[2023-10-27 16:54:29.302797] - picture created
+[2023-10-27 16:54:29.302797] - HTML file created

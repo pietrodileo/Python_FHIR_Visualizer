@@ -1,0 +1,26 @@
+{
+    "response": "FHIR message is wrong",
+    "wrong_references": [
+        {
+            "resource": "Encounter",
+            "key": "basedOn",
+            "wrong_reference": "ServiceRequest/e2bdf00d-3326-4465-8b9c-95567ae7efd47"
+        },
+        {
+            "resource": "Condition",
+            "key": "subject",
+            "wrong_reference": "Patient/6682899a-f386-4345-a178-5e98023575f7"
+        },
+        {
+            "resource": "ServiceRequest",
+            "key": "encounter",
+            "wrong_reference": "Encounter/ace5cde7-44r5-4d36-9d6b-9a837ed7fdcb"
+        },
+        {
+            "resource": "Organization3",
+            "key": "partOf",
+            "wrong_reference": "Organization/37d47b20-fbe0-11ab-10o7-02001700b287"
+        }
+    ],
+    "isaValidFHIR": 0
+}
